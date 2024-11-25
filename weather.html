@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER APPLICATION</title>
+  <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+  <link rel="stylesheet" href="weather.css">
+   <!--<link rel="stylesheet" href="weather-resp.css">  -->
+  </head>
+
+<body>
+  <div class="container"id="weather-container">
+    <div class="wrapper">
+      <div class="img_section">
+        <div class="default_info">
+          <h2 class="default_day">Sunday</h2>
+          <span class="default_date">18 September 2023 </span><br>
+          <span class="time">dfd</span>
+          <div class="icons">
+            <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="" />
+            <h2 class="weather_temp">22°C</h2>
+            <h3 class="cloudtxt">Overcast Clouds</h3>
+          </div>
+        </div>
+      </div>
+      <div class="content_section">
+        <form>
+          <input type="text" placeholder="Search Location" class="input_field" />
+          <button type="submit" class="btn_search" id="location-input">Search</button>
+        </form>
+
+        <div class="day_info">
+          <div class="content">
+            <p class="title">NAME</p>
+            <span class="value">WEATHER</span>
+          </div>
+          <div class="content">
+            <p class="title">TEMP</p>
+            <span class="value">0°C</span>
+          </div>
+          <div class="content">
+            <p class="title">FEELS LIKE</p>
+            <span class="value">0°C</span>
+          </div>
+          <div class="content">
+            <p class="title">HUMIDITY</p>
+            <span class="value">0%</span>
+          </div>
+          <div class="content">
+            <p class="title">WIND SPEED</p>
+            <span class="value">0 Km/h</span>
+          </div>
+          <!-- <div class="content">
+            <p class="title">MAX TEMP</p>
+            <span class="value">0%</span>
+          </div>
+          <div class="content">
+            <p class="title">MIN TEMP</p>
+            <span class="value">0%</span>
+          </div> -->
+          <div class="content">
+            <p class="title">SUNRISE</p>
+            <span class="value">TIME</span>
+          </div>
+          <div class="content">
+            <p class="title">SUNSSET</p>
+            <span class="value">TIME</span>
+          </div>
+        </div>
+
+
+        <div class="list_content">
+          <ul>
+            <li>
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+              <span>Sat</span>
+              <span class="day_temp">0°C</span>
+            </li>
+            <li>
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+              <span>Sat</span>
+              <span class="day_temp">0°C</span>
+            </li>
+            <li>
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+              <span>Sat</span>
+              <span class="day_temp">0°C</span>
+            </li>
+            <li>
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+              <span>Sat</span>
+              <span class="day_temp">0°C</span>
+            </li>
+          </ul>
+        </div>
+        <h1 id="result"></h1>
+      </div>
+    </div>
+  </div>
+  <script src="weather2.js"></script>
+</body>
+
+</html>

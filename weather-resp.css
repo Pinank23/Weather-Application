@@ -1,0 +1,138 @@
+/* Make it responsive to 412px */
+@media only screen and (max-width: 412px) {
+    /* Adjust container width and padding */
+    .container {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  
+    /* Adjust grid template columns */
+    .wrapper {
+      grid-template-columns: 1fr; 
+    }
+  
+    /* Adjust image section styles */
+    .img_section {
+      background-size: 100% 100%;
+      height: 150px;
+    }
+  
+    /* Adjust default info styles */
+    .default_info {
+      padding: 1rem;
+    }
+  
+    .default_info img {
+      width: 60%;
+    }
+  
+    .default_info h2 {
+      font-size: 2rem;
+    }
+  
+    .default_info h3 {
+      font-size: 20px;
+    }
+  
+    /* Adjust weather temp styles */
+    .weather_temp {
+      font-size: 2.5rem;
+    }
+  
+    /* Adjust content section styles */
+    .content_section {
+      padding: 1rem;
+    }
+  
+    .content_section form {
+      margin: 1rem 0;
+    }
+  
+    .content_section form input {
+      width: 90%;
+      padding: 0.5rem 1rem;
+    }
+  
+    .content_section form button {
+      padding: 0.5rem 0.7rem;
+      font-size: 0.7rem;
+    }
+  
+    /* Adjust day info styles */
+    .day_info .content {
+      flex-wrap: wrap;
+    }
+  
+    .day_info .content .title {
+      font-weight: 500;
+    }
+  
+    /* Adjust list content styles */
+    .list_content ul {
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+  
+    .list_content ul li {
+      padding: 0.3rem;
+      margin: 0.5rem;
+    }
+  
+    .list_content ul li img {
+      width: 30%;
+    }
+  
+    /* Additional adjustments for 412px */
+    .img_section::before {
+      background-size: 100% 100%;
+    }
+  
+    .default_info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .default_info h3 {
+      font-size: 18px;
+    }
+  
+    .weather_temp {
+      font-size: 2.2rem;
+    }
+  
+    .content_section form input {
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .content_section form button {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.6rem;
+    }
+  
+    .list_content ul li {
+      padding: 0.2rem;
+      margin: 0.3rem;
+    }
+  
+    .list_content ul li img {
+      width: 25%;
+    }
+  }
+  
+  
+  /* Add this to your existing CSS */
+  .wrapper.js-loaded {
+    height: 100vh; /* or any other height you want */
+  }
+  
+  .wrapper {
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .img_section.js-loaded {
+    height: 350px; /* or any other height you want */
+    background-size: 100% 100%;
+  }
+  
+  .img_section {
+    transition: height 0.5s ease-in-out;
+  }
